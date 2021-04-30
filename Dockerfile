@@ -1,7 +1,7 @@
 FROM nextcloud:apache
 
 RUN apt upgrade && apt -y update
-RUN apt -y install libreoffice libreoffice-l10n-de libreoffice-help-de ffmpeg imagemagick ghostscript
+RUN apt -y install ffmpeg imagemagick ghostscript
 
 ENV NEXTCLOUD_UPDATE=1
 
